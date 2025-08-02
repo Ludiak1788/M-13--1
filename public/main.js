@@ -16,11 +16,15 @@ function backToIntro() {
   document.getElementById('infoTabs').style.display = 'none';
   intro.classList.add('active');
   geoStage.classList.remove('active');
+  window.scrollTo({top: 0, behavior: "smooth"});
+
 }
 
 function goToInfoTabs() {
   intro.classList.remove('active');
   document.getElementById('infoTabs').style.display = 'block';
+  window.scrollTo({top: 0, behavior: "smooth"});
+
 }
 
 function showTab(tabId) {
@@ -34,6 +38,8 @@ function showTab(tabId) {
 function goToGeoStageFromTabs() {
   document.getElementById('infoTabs').style.display = 'none';
   geoStage.classList.add('active');
+  window.scrollTo({top: 0, behavior: "smooth"});
+
 }
 
 // --- Геолокация ---
@@ -197,6 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
     message.textContent = 'Kliknij poniższy przycisk, aby rozpocząć. / Нажмите кнопку ниже для начала.';
   });
 });
+
 
 
 
