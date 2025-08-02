@@ -108,12 +108,14 @@ function success(position) {
       message.innerHTML =
         `✅ Lokalizacja potwierdzona. Wypełnij formularz poniżej:<br>
         ✅ Местоположение подтверждено. Заполните форму ниже:
-        <iframe id="googleFormIframe"
-  src="https://docs.google.com/forms/d/e/1FAIpQLScWAcx35bMtBpca_IA4Lv-O1sMm-O_bUANHeRi4JFK3k3PltA/viewform?usp=dialog"
-  style="width:100%; height:1200px; border:none; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-  Ładowanie formularza… Загрузка формы…
-        </iframe>
-        `;
+        div class="form-box">
+  <div class="form-box__top"></div>
+  <iframe
+    id="googleFormIframe"
+    src="https://docs.google.com/forms/d/e/1FAIpQLScWAcx35bMtBpca_IA4Lv-O1sMm-O_bUANHeRi4JFK3k3PltA/viewform?usp=dialog"
+    style="width:100%; height:1200px; border:none; margin-top:-630px; display:block;">
+    Ładowanie formularza… Загрузка формы…
+  </iframe>
 
       // ЖДЁМ загрузку формы, тогда скроллим вверх!
       setTimeout(() => {
@@ -218,6 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
     message.textContent = 'Kliknij poniższy przycisk, aby rozpocząć. / Нажмите кнопку ниже для начала.';
   });
 });
+
 
 
 
