@@ -106,7 +106,7 @@ function success(position) {
     if (!localStorage.getItem("ankieta_wypelniona")) {
       localStorage.setItem("ankieta_wypelniona", "true");
       message.innerHTML =
-           ✅ Lokalizacja potwierdzona. Wypełnij formularz poniżej:<br>
+          `       ✅ Lokalizacja potwierdzona. Wypełnij formularz poniżej:<br>
         ✅ Местоположение подтверждено. Заполните форму ниже:
         <div class="form-box">
   <div class="form-box__top"></div>
@@ -116,7 +116,7 @@ function success(position) {
     style="width:100%; height:1200px; border:none; margin-top:-630px; display:block;">
     Ładowanie formularza… Загрузка формы…
   </iframe>
-        ;
+        `;
 
       // ЖДЁМ загрузку формы, тогда скроллим вверх!
       setTimeout(() => {
@@ -221,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
     message.textContent = 'Kliknij poniższy przycisk, aby rozpocząć. / Нажмите кнопку ниже для начала.';
   });
 });
+
 
 
 
