@@ -1,7 +1,7 @@
 // Координаты склада и радиус
-const warehouseLat = 53.43503224828556;
-const warehouseLon = 14.55258543983807;
-const allowedRadius = 3000;
+const warehouseLat = 53.42704842215917;
+const warehouseLon = 14.73561802819243;
+const allowedRadius = 160;
 
 // DOM элементы
 const intro = document.getElementById('intro');
@@ -221,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
     message.textContent = 'Kliknij poniższy przycisk, aby rozpocząć. / Нажмите кнопку ниже для начала.';
   });
 });
+
 
 
 
